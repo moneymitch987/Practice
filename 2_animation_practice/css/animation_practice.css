@@ -1,0 +1,73 @@
+/* this is where all of your CSS styles go */
+
+.grid_container {
+	width: 450px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 48%; /* for optical centering */
+	margin-top: 200px;
+	margin-left: -190px;
+}
+
+.mono {
+	font-family: 'Fjalla One';
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+}
+
+/* Animation Keyframes */
+
+@keyframes b_fade {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+.b {
+	animation: b_fade 4s;
+	position: relative;
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes i_move {
+	0%,100% { left: 0px }
+	100% { left: 70px }
+}
+
+.i {
+	animation: i_move 4s ease-out; 
+	position: relative;
+	animation-fill-mode: forwards;
+}
+
+@keyframes a_move {
+	0%,100% { left: 0px }
+	100% { left: -40px }
+}
+
+.a {
+	animation: a_move 4s ease-out; 
+	position: relative;
+	animation-fill-mode: forwards;
+}
+
+@keyframes square_move {
+	0%,100% { left: 53%; }
+	25% { top: 50px }
+	50% { left: 600px }
+	100% { left: 600px; }
+}
+
+.square {
+	width: 100px; 
+	height: 20px;
+	background: black;
+	position: absolute;
+	left: 53%;
+	top: 400px;
+	animation: square_move 4s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
